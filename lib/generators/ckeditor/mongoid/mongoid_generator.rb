@@ -13,13 +13,13 @@ module Ckeditor
     end
 
     def create_models
-      template "#{generator_dir}/asset.rb",
+      template "paperclip/asset.rb",
                File.join('app/models', ckeditor_dir, "asset.rb")
       
-      template "#{generator_dir}/picture.rb",
+      template "paperclip/picture.rb",
                File.join('app/models', ckeditor_dir, "picture.rb")
       
-      template "#{generator_dir}/attachment_file.rb",
+      template "paperclip/attachment_file.rb",
                File.join('app/models', ckeditor_dir, "attachment_file.rb")
     end
     
@@ -29,8 +29,5 @@ module Ckeditor
         'ckeditor'
       end
       
-      def generator_dir
-        options[:backend] = "paperclip"
-      end
   end
 end
