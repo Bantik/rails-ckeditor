@@ -1,0 +1,9 @@
+CKEditor
+========
+
+# Generate models to store uploaded images and files from ckeditor
+# It generates three models: Ckeditor::Asset, Ckeditor::Picture and Ckeditor::AttachmentFile,
+# Backend is paperclip
+
+./script/generate ckeditor_mongoid
+
