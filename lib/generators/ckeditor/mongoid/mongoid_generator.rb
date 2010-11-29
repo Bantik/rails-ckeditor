@@ -1,5 +1,4 @@
 require 'rails/generators'
-require 'rails/generators/mongoid'
 
 module Ckeditor
   class MigrationGenerator < Rails::Generators::Base
