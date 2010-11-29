@@ -1,7 +1,7 @@
 require 'rails/generators'
 
 module Ckeditor
-  class MigrationGenerator < Rails::Generators::Base
+  class MongoidGenerator < Rails::Generators::Base
     
     desc "Generates Mongoid source files for Asset (Picture, AttachmentFile) models"
     
