@@ -3,7 +3,8 @@ require 'mime/types'
 class Ckeditor::Asset
 
   include Mongoid::Document
-
+  include Mongoid::Timestamps
+  
   field :data_file_name
   field :data_content_type
   field :data_file_size, :type => Integer
