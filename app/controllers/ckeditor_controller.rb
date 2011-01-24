@@ -6,7 +6,7 @@ class CkeditorController < ApplicationController
   
   # GET /ckeditor/images
   def images
-    @images = Ckeditor.image_model.order("id DESC")
+    @images = Ckeditor.image_model.all
     respond_with(@images)
   end
   
